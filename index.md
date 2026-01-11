@@ -3,11 +3,12 @@ layout: page
 title: Home
 ---
 
-## Welcome to the Basu Neuro Lab
+<img src="/assets/images/hero.jpg" alt="Lab overview">
 
-Our lab is broadly interested in the neural mechanisms underlying navigation and decision-making.
+<section>
+Our lab investigates how the brain constructs internal maps of the world and uses them to guide flexible navigation and decision-making.
+</section>
 
-Specifically, we aim to:
-
-1. Understand how the brain forms useful maps of the surrounding environment.  
-2. Understand how such maps are used to make flexible navigational decisions.
+<section>
+We combine behavioral paradigms, large-scale electrophysiology, neural perturbation techniques, and computational analysis to understand how spatial and goal-related information is represented across brain circuits.
+</section>
