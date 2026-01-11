@@ -28,3 +28,19 @@ img {
 section {
   margin-bottom: 3rem;
 }
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 180px;
+  height: auto;
+}
+
