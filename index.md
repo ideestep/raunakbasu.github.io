@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-<img src="/assets/images/hero.jpg" alt="Lab overview">
+<img src="/assets/images/main_page.jpg" alt="Lab overview">
 
 <section>
 Our lab investigates how the brain constructs internal maps of the world and uses them to guide flexible navigation and decision-making.
