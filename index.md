@@ -8,17 +8,7 @@
 </head>
 <body>
 
-<header>
-  <div class="logo">Basu Neuro Lab</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="people.html">People</a>
-    <a href="publications.html">Publications</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+
 
 <section class="hero">
   <h1>Neural Mechanisms of Navigation and Decision-Making</h1>
