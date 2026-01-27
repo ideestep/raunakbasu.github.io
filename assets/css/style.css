@@ -200,3 +200,45 @@ img {
     margin: 0 auto;
   }
 }
+
+.hero {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 820px;
+  padding: 60px 24px;
+  background: rgba(255,255,255,0.85);
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+.hero-home {
+  background-image: url("../img/hero-index.jpg");
+}
+
+.hero-research {
+  background-image: url("../img/hero-research.jpg");
+}
+
+.hero-members {
+  background-image: url("../img/hero-members.jpg");
+}
+
+.hero-publication {
+  background-image: url("../img/hero-publication.jpg");
+}
+
+.hero-labnews {
+  background-image: url("../img/hero-labnews.jpg");
+}
+
+.hero-join {
+  background-image: url("../img/hero-join.jpg");
+}
