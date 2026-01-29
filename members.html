@@ -126,6 +126,35 @@
 </footer>
 
 
+<script>
+  const modal = document.getElementById("cvModal");
+  const iframe = document.getElementById("cvFrame");
+  const closeBtn = document.querySelector(".cv-close");
+
+  document.querySelectorAll("[data-cv]").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      iframe.src = btn.dataset.cv;
+      modal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", e => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeModal();
+  });
+
+  function closeModal() {
+    modal.classList.remove("active");
+    iframe.src = "";
+    document.body.style.overflow = "";
+  }
+</script>
 
 </body>
 </html>
