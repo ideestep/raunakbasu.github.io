@@ -1,5 +1,14 @@
 .site-header { background: #d6d9d6; }
 .page-hero { height: 55vh; background-size: cover; }
-.site-footer { background: #6f845c; }
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.site-footer a:hover {
+  border-bottom-color: #ffffff;
+}
+
 .container { max-width: 1200px; margin: auto; }
 
