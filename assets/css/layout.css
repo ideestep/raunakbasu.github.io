@@ -12,3 +12,11 @@
 
 .container { max-width: 1200px; margin: auto; }
 
+.hero-content {
+  max-width: 900px;
+  margin: 4rem auto 6rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+
