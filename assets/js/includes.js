@@ -10,3 +10,11 @@ function loadHTML(id, file) {
 loadHTML("site-header", "includes/header.html");
 loadHTML("site-footer", "includes/footer.html");
 
+document.addEventListener("DOMContentLoaded", () => {
+  const current = location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".nav a").forEach(link => {
+    if (link.getAttribute("href") === current) {
+      link.classList.add("active");
+    }
+  });
+});
