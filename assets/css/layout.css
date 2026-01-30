@@ -67,6 +67,10 @@
   background-image: url("../../images/hero-index.jpg");
 }
 
+.hero-contact {
+  background-image: url("../../images/hero-philosophy.jpg");
+}
+
 .hero-research {
   background-image: url("../../images/hero-research.jpg");
 }
