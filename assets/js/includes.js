@@ -9,6 +9,6 @@ function loadHTML(id, file) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadHTML("header", "assets/partials/header.html");
-  loadHTML("footer", "assets/partials/footer.html");
+  loadHTML("header", "partials/header.html");
+  loadHTML("footer", "partials/footer.html");
 });
