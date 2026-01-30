@@ -36,6 +36,11 @@ body {
   height: 96px;        /* doubled from ~48px */
   width: auto;
 }
+@media (max-width: 900px) {
+  .logo {
+    height: 72px;
+  }
+}
 
 
 .nav a {
