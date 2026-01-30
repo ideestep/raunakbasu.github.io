@@ -18,5 +18,26 @@
   padding: 0 1.5rem;
   text-align: center;
 }
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-right {
+  align-self: flex-end;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+}
 
 
