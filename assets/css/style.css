@@ -33,8 +33,10 @@ body {
 }
 
 .logo {
-  height: 48px;
+  height: 96px;        /* doubled from ~48px */
+  width: auto;
 }
+
 
 .nav a {
   margin-left: 18px;
