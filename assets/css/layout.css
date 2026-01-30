@@ -64,6 +64,27 @@
 }
 
 .hero-home {
-  background-image: url("../../hero-index.jpg");
+  background-image: url("../../images/hero-index.jpg");
 }
+
+.hero-research {
+  background-image: url("../../images/hero-research.jpg");
+}
+
+.hero-members {
+  background-image: url("../../images/hero-members.jpg");
+}
+
+.hero-publication {
+  background-image: url("../../images/hero-publication.jpg");
+}
+
+.hero-labnews {
+  background-image: url("../../images/hero-labnews.jpg");
+}
+
+.hero-join {
+  background-image: url("../../images/hero-join.jpg");
+}
+
 
