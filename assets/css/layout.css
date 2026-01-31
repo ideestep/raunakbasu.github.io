@@ -97,4 +97,29 @@
   background-image: url("../../images/hero-join.jpg");
 }
 
+/* ================= FOOTER ================= */
+
+.site-footer {
+  background: #cfd3cf; /* slightly darker than header */
+  border-top: 1px solid #bfc4bf;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #2a3a2a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+}
+
+.footer-content .copyright {
+  font-size: 12px;
+  color: #555;
+}
 
