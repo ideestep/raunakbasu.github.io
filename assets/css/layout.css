@@ -64,10 +64,19 @@
 
 
 .page-hero {
-  height: 65vh;
-  background-size: cover;
-  background-position: center;
+  width: 100vw;              /* force full viewport width */
+  min-height: 70vh;          /* strong visual presence */
+  background-size: cover;    /* fill screen logically */
+  background-position: center center; /* THIS centers properly */
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: calc(50% - 50vw); /* breaks out of centered layouts */
 }
+
 
 .hero-home {
   background-image: url("../../images/hero-index.jpg");
