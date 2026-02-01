@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basu Neuro Lab</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Lab Photos | Basu Neuro Lab</title>
+
+  <!-- USE EXACT SAME CSS FILES AS index.html -->
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
 </head>
+
 <body>
 
 <header class="site-header">
@@ -24,46 +28,33 @@
   </div>
 </header>
 
-
 <main>
 
-  <section class="page-hero hero-photos">
-    <h1>lab photos</h1>
+  <!-- SAME HERO PATTERN AS OTHER PAGES -->
+  <section class="page-hero">
+    <h1>Lab Photos</h1>
   </section>
 
-  <section class="gallery-section">
+  <!-- CONTENT -->
+  <section class="page-content">
     <div id="gallery" class="gallery-grid"></div>
   </section>
 
 </main>
 
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-img">
-  <p class="lightbox-caption"></p>
-</div>
-
-
-
-
+<!-- SAME FOOTER AS index / join -->
 <footer class="site-footer">
-  <div class="footer-content">
-    <p>
-      Raunak Basu<br>
-      Assistant Professor<br>
-      The Edmond and Lily Safra Center for Brain Sciences<br>
-      The Suzanne and Charles Goodman Brain Sciences Building,<br>
-      Edmond J. Safra Campus,<br>
-      The Hebrew University of Jerusalem, 9190401<br>
-      Lab: 2209
-    </p>
-
-    <p class="copyright">
-      © 2026 Basu Neuro Lab. All rights reserved.
-    </p>
+  <div class="footer-inner">
+    <p>© 2026 Basu Neuro Lab · Hebrew University of Jerusalem</p>
   </div>
 </footer>
+
+<!-- LIGHTBOX (structure only, styled via existing CSS or minimal additions) -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" alt="">
+  <p class="lightbox-caption"></p>
+</div>
 
 <script>
 fetch('assets/data/lab-photos.json')
@@ -74,8 +65,8 @@ fetch('assets/data/lab-photos.json')
     photos.forEach(photo => {
       const img = document.createElement('img');
       img.src = photo.src;
-      img.alt = photo.caption;
-      img.onclick = () => openLightbox(photo.src, photo.caption);
+      img.alt = photo.caption || '';
+      img.addEventListener('click', () => openLightbox(photo.src, photo.caption));
       gallery.appendChild(img);
     });
   });
@@ -87,7 +78,7 @@ const lightboxCaption = document.querySelector('.lightbox-caption');
 function openLightbox(src, caption) {
   lightbox.style.display = 'flex';
   lightboxImg.src = src;
-  lightboxCaption.textContent = caption;
+  lightboxCaption.textContent = caption || '';
 }
 
 document.querySelector('.lightbox-close').onclick = () => {
@@ -95,8 +86,5 @@ document.querySelector('.lightbox-close').onclick = () => {
 };
 </script>
 
-
 </body>
 </html>
-
-
