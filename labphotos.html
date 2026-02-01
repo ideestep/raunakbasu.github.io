@@ -5,60 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lab Photos | Basu Neuro Lab</title>
 
-  <!-- EXACT SAME CSS STACK AS index.html -->
+  <!-- SAME CSS AS INDEX -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/includes.js" defer></script>
 </head>
 
 <body>
 
-<!-- ================= HEADER (IDENTICAL EVERYWHERE) ================= -->
-<header class="site-header">
-  <div class="header-inner">
+<!-- HEADER -->
+<div id="header-placeholder"></div>
 
-    <a href="index.html" class="logo-link">
-      <img src="img/logo.png" alt="Basu Neuro Lab Logo" class="logo">
-    </a>
-
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="members.html">Members</a>
-      <a href="publications.html">Publications</a>
-      <a href="labnews.html">Lab News</a>
-      <a href="join.html">Join Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="page-hero hero-photos">
   <h1>Lab Photos</h1>
 </section>
 
-<!-- ================= CONTENT ================= -->
+<!-- CONTENT -->
 <main class="page-content">
   <div id="gallery" class="gallery-grid"></div>
 </main>
 
-<!-- ================= FOOTER (IDENTICAL EVERYWHERE) ================= -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p>© 2026 Basu Neuro Lab · Hebrew University of Jerusalem</p>
-  </div>
-</footer>
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
 
-<!-- ================= LIGHTBOX ================= -->
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
   <span class="lightbox-close">&times;</span>
   <img class="lightbox-img" alt="">
   <p class="lightbox-caption"></p>
 </div>
 
-<!-- ================= SCRIPT ================= -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -95,11 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   closeBtn.addEventListener("click", closeLightbox);
-
   lightbox.addEventListener("click", e => {
     if (e.target === lightbox) closeLightbox();
   });
-
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") closeLightbox();
   });
