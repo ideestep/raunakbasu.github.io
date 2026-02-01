@@ -160,39 +160,59 @@
   margin-bottom: 5rem;
 }
 
+/* ================= MEMBERS GRID ================= */
+
 .members-grid {
-  max-width: 1100px;
-  margin: 4rem auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 3rem;
+  align-items: start;
+}
+
+/* ================= MEMBER CARD ================= */
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
+/* Fixed avatar box to normalize alignment */
 .member-card img {
-  width: 100%;
-  max-width: 220px;
-  aspect-ratio: 1 / 1;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.member-card h3 {
-  font-size: 1.05rem;
-  margin-bottom: 0.25rem;
+/* Text block alignment */
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 120px; /* KEY: forces equal height */
 }
 
-.member-role {
-  font-size: 0.9rem;
+/* Name */
+.member-info h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Role */
+.member-info p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
   color: #555;
-  margin-bottom: 0.8rem;
 }
 
-@media (max-width: 900px) {
-  .members-grid {
-    grid-template-columns: 1fr;
-  }
+/* CV link spacing consistency */
+.member-info a {
+  margin-top: auto; /* KEY: pushes link to same baseline */
+  font-size: 0.9rem;
 }
 
 /* ================= PUBLICATIONS ================= */
