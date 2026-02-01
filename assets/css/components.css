@@ -240,14 +240,86 @@
   margin-top: 0.2rem;
 }
 
+/* =========================
+   LAB PHOTOS – GALLERY
+   ========================= */
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
 }
 
 .gallery-grid img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+/* =========================
+   LIGHTBOX
+   ========================= */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 40px;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.lightbox-caption {
+  color: #eaeaea;
+  font-size: 0.95rem;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+/* =========================
+   RESPONSIVE REFINEMENTS
+   ========================= */
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    gap: 16px;
+  }
+
+  .lightbox-caption {
+    font-size: 0.9rem;
+  }
 }
