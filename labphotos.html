@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lab Photos | Basu Neuro Lab</title>
 
-  <!-- USE EXACT SAME CSS FILES AS index.html -->
+  <!-- SAME CSS AS OTHER PAGES -->
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
 </head>
 
 <body>
 
+<!-- HEADER (UNCHANGED) -->
 <header class="site-header">
   <div class="header-inner">
     <img src="img/logo.png" alt="Basu Neuro Lab Logo" class="logo">
@@ -30,8 +31,8 @@
 
 <main>
 
-  <!-- SAME HERO PATTERN AS OTHER PAGES -->
-  <section class="page-hero">
+  <!-- HERO (SAME PATTERN AS OTHERS) -->
+  <section class="page-hero hero-photos">
     <h1>Lab Photos</h1>
   </section>
 
@@ -42,16 +43,16 @@
 
 </main>
 
-<!-- SAME FOOTER AS index / join -->
+<!-- FOOTER (EXACT SAME STRUCTURE AS INDEX / JOIN) -->
 <footer class="site-footer">
   <div class="footer-inner">
     <p>© 2026 Basu Neuro Lab · Hebrew University of Jerusalem</p>
   </div>
 </footer>
 
-<!-- LIGHTBOX (structure only, styled via existing CSS or minimal additions) -->
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
-  <span class="lightbox-close">&times;</span>
+  <button class="lightbox-close" aria-label="Close">&times;</button>
   <img class="lightbox-img" alt="">
   <p class="lightbox-caption"></p>
 </div>
@@ -66,6 +67,7 @@ fetch('assets/data/lab-photos.json')
       const img = document.createElement('img');
       img.src = photo.src;
       img.alt = photo.caption || '';
+      img.loading = "lazy";
       img.addEventListener('click', () => openLightbox(photo.src, photo.caption));
       gallery.appendChild(img);
     });
@@ -74,16 +76,30 @@ fetch('assets/data/lab-photos.json')
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.querySelector('.lightbox-img');
 const lightboxCaption = document.querySelector('.lightbox-caption');
+const closeBtn = document.querySelector('.lightbox-close');
 
 function openLightbox(src, caption) {
   lightbox.style.display = 'flex';
   lightboxImg.src = src;
   lightboxCaption.textContent = caption || '';
+  document.body.style.overflow = 'hidden';
 }
 
-document.querySelector('.lightbox-close').onclick = () => {
+function closeLightbox() {
   lightbox.style.display = 'none';
-};
+  lightboxImg.src = '';
+  document.body.style.overflow = '';
+}
+
+closeBtn.addEventListener('click', closeLightbox);
+
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
 </script>
 
 </body>
