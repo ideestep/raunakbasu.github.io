@@ -88,3 +88,27 @@
   }
 }
 
+.news-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.news-year {
+  font-size: 22px;
+  margin: 50px 0 20px;
+  color: #1f2d1f;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.news-list li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+
+  padding: 14px 0;
+  border-bottom: 1px dashed #ddd;
+}
