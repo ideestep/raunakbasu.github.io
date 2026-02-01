@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lab Photos | Basu Neuro Lab</title>
 
-  <!-- SAME CSS AS OTHER PAGES -->
+  <!-- EXACT SAME CSS STACK AS index.html -->
+  <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
 </head>
 
 <body>
 
-<!-- HEADER (UNCHANGED) -->
+<!-- ================= HEADER (IDENTICAL EVERYWHERE) ================= -->
 <header class="site-header">
   <div class="header-inner">
-    <img src="img/logo.png" alt="Basu Neuro Lab Logo" class="logo">
+
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Basu Neuro Lab Logo" class="logo">
+    </a>
 
     <nav class="site-nav">
       <a href="index.html">Home</a>
@@ -26,37 +30,35 @@
       <a href="join.html">Join Us</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<main>
+<!-- ================= HERO ================= -->
+<section class="page-hero hero-photos">
+  <h1>Lab Photos</h1>
+</section>
 
-  <!-- HERO (SAME PATTERN AS OTHERS) -->
-  <section class="page-hero hero-photos">
-    <h1>Lab Photos</h1>
-  </section>
-
-  <!-- CONTENT -->
-  <section class="page-content">
-    <div id="gallery" class="gallery-grid"></div>
-  </section>
-
+<!-- ================= CONTENT ================= -->
+<main class="page-content">
+  <div id="gallery" class="gallery-grid"></div>
 </main>
 
-<!-- FOOTER (EXACT SAME STRUCTURE AS INDEX / JOIN) -->
+<!-- ================= FOOTER (IDENTICAL EVERYWHERE) ================= -->
 <footer class="site-footer">
   <div class="footer-inner">
     <p>© 2026 Basu Neuro Lab · Hebrew University of Jerusalem</p>
   </div>
 </footer>
 
-<!-- LIGHTBOX -->
+<!-- ================= LIGHTBOX ================= -->
 <div id="lightbox" class="lightbox">
-  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <span class="lightbox-close">&times;</span>
   <img class="lightbox-img" alt="">
   <p class="lightbox-caption"></p>
 </div>
 
+<!-- ================= SCRIPT ================= -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -74,37 +76,3 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = photo.src;
         img.alt = photo.caption || "";
         img.loading = "lazy";
-
-        img.addEventListener("click", () => {
-          lightbox.style.display = "flex";
-          lightboxImg.src = photo.src;
-          lightboxCaption.textContent = photo.caption || "";
-          document.body.style.overflow = "hidden";
-        });
-
-        gallery.appendChild(img);
-      });
-    });
-
-  closeBtn.addEventListener("click", closeLightbox);
-
-  lightbox.addEventListener("click", e => {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeLightbox();
-  });
-
-  function closeLightbox() {
-    lightbox.style.display = "none";
-    lightboxImg.src = "";
-    document.body.style.overflow = "";
-  }
-
-});
-</script>
-
-
-</body>
-</html>
