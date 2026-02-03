@@ -1,142 +1,140 @@
-/* ================= HEADER ================= */
+/* =========================
+   GLOBAL PAGE STRUCTURE
+   ========================= */
 
-.site-header {
-  background: #d6d9d6;
-  border-bottom: 1px solid #c9ccc9;
-}
-
-.header-inner {
-  max-width: 1200px;
+.page-content {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 32px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* ← THIS is the key */
+  padding: 0 24px;
 }
 
-/* LOGO */
-.logo {
-  height: 90px; /* doubled as you requested */
-  display: block;
+section {
+  margin-bottom: 4rem;
 }
 
-/* NAV */
-.site-nav {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.site-nav a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: #1f2d1f;
-}
-
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ACTIVE PAGE */
-.site-nav a.active {
-  text-decoration: underline;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 900px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .logo {
-    height: 80px;
-  }
-
-  .site-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
+/* =========================
+   HERO IMAGES (IMAGE ONLY)
+   ========================= */
 
 .page-hero {
-  width: 100%;
-  height: 38vh;               /* smaller, academic */
-  min-height: 280px;
+  height: 280px;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
+/* =========================
+   HOME INTRO (TEXT AFTER HERO)
+   ========================= */
 
-
-.hero-home {
-  background-image: url("../../images/hero-index.jpg");
+.home-intro {
+  max-width: 820px;
+  margin: 4rem auto 5rem;
+  text-align: center;
 }
 
-.hero-contact {
-  background-image: url("../../images/hero-philosophy.jpg");
-}
+/* =========================
+   NEWS PAGE
+   ========================= */
 
-.hero-research {
-  background-image: url("../../images/hero-research.jpg");
-}
-
-.hero-members {
-  background-image: url("../../images/hero-members.jpg");
-}
-
-.hero-publication {
-  background-image: url("../../images/hero-publication.jpg");
-}
-
-.hero-labnews {
-  background-image: url("../../images/hero-labnews.jpg");
-}
-
-.hero-join {
-  background-image: url("../../images/hero-join.jpg");
-}
-
-/* ================= FOOTER ================= */
-
-.site-footer {
-  background: #cfd3cf; /* slightly darker than header */
-  border-top: 1px solid #bfc4bf;
-  padding: 40px 20px;
-}
-
-.footer-content {
+.news-container {
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
-  color: #2a3a2a;
-  font-size: 14px;
-  line-height: 1.6;
 }
 
-.footer-content p {
-  margin-bottom: 20px;
+.news-year {
+  font-size: 22px;
+  margin: 3rem 0 1.25rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
 }
 
-.footer-content .copyright {
-  font-size: 12px;
-  color: #555;
-}
-.page-content {
-  padding: 4rem 0;
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.content-wrap {
-  max-width: 960px;
+.news-list li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* =========================
+   JOIN PAGE
+   ========================= */
+
+.join-grid {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+@media (max-width: 900px) {
+  .join-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   MEMBERS PAGE
+   ========================= */
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3rem;
+}
+
+/* =========================
+   RESEARCH PAGE
+   ========================= */
+
+.research-intro {
+  max-width: 800px;
+  margin: 3rem auto 4rem;
+}
+
+.research-blocks {
+  max-width: 1100px;
+  margin: 0 auto 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+@media (max-width: 900px) {
+  .research-blocks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2rem;
-}
-.lab-news {
-  width: 100%;
 }
 
+.contact-map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
