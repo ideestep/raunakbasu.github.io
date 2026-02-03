@@ -138,3 +138,17 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+.site-header {
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
