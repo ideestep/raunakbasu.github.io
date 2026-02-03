@@ -23,6 +23,27 @@
   width: 100%;
 }
 
+.home-intro {
+  max-width: 820px;
+  margin: 4rem auto 5rem;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.home-intro h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2f3a2f;
+}
+
+.home-intro .hero-intro {
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 32px;
+}
+
 /* ================= JOIN US GRID ================= */
 
 .join-grid {
