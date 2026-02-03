@@ -152,9 +152,9 @@
 
 /* LOGO */
 .site-logo {
-  height: 48px;          /* critical */
+  height: 24px;
   width: auto;
-  display: block;        /* removes inline spacing issues */
+  display: block;
 }
 
 
