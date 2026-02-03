@@ -151,6 +151,13 @@
 }
 
 /* LOGO */
+.site-logo {
+  height: 48px;          /* critical */
+  width: auto;
+  display: block;        /* removes inline spacing issues */
+}
+
+
 .site-logo a {
   font-size: 1.2rem;
   font-weight: 600;
@@ -162,15 +169,15 @@
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 .site-nav a {
   text-decoration: none;
   font-size: 0.95rem;
   color: #222;
+  line-height: 1;
 }
-
 .site-nav a:hover {
   text-decoration: underline;
 }
