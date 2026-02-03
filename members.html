@@ -10,98 +10,114 @@
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
 
-  <!-- HEADER / FOOTER INCLUDES -->
   <script src="assets/js/includes.js" defer></script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<div id="header-placeholder"></div>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
 
-<!-- ================= HERO ================= -->
-<section class="page-hero hero-members">
-  <div class="hero-title">
-    <h1>Members</h1>
+  <main>
+
+    <!-- HERO IMAGE ONLY -->
+    <section
+      class="page-hero hero-members"
+      style="background-image: url('assets/images/hero-members.jpg');">
+    </section>
+
+    <!-- PAGE CONTENT -->
+    <section class="news-container members-page">
+
+      <h1 class="page-title">Members</h1>
+
+      <div class="members-grid">
+
+        <!-- MEMBER -->
+        <article class="member-card">
+          <img src="images/Raunak.jpeg" alt="Raunak Basu">
+          <div class="member-info">
+            <h3>Raunak Basu, PhD</h3>
+            <p>Principal Investigator</p>
+            <a href="#" class="btn-secondary" data-cv="assets/cv/RaunakBasu.pdf">
+              Curriculum Vitae
+            </a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/Ivon.png" alt="Ivon Ben-Zaken">
+          <div class="member-info">
+            <h3>Ivon Ben-Zaken</h3>
+            <p>Lab Manager</p>
+            <a href="#" class="btn-secondary" data-cv="assets/cv/ivon-ben-zaken-cv.pdf">
+              Curriculum Vitae
+            </a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/Abhishek.jpeg" alt="Abhishek Jangid">
+          <div class="member-info">
+            <h3>Abhishek Jangid</h3>
+            <p>PhD Student</p>
+            <a href="#" class="btn-secondary" data-cv="assets/cv/abhishek-jangid-cv.pdf">
+              Curriculum Vitae
+            </a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/Miada.jpg" alt="Miada Abu-Salih">
+          <div class="member-info">
+            <h3>Miada Abu-Salih</h3>
+            <p>PhD Student</p>
+            <a href="#" class="btn-secondary" data-cv="assets/cv/miada-abu-salih-cv.pdf">
+              Curriculum Vitae
+            </a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/Francis.jpeg" alt="Francis Mitri">
+          <div class="member-info">
+            <h3>Francis Mitri</h3>
+            <p>PhD Student</p>
+            <a href="#" class="btn-secondary" data-cv="assets/cv/francis-mitri-cv.pdf">
+              Curriculum Vitae
+            </a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/Raunak.jpeg" alt="Ayush Banerjee">
+          <div class="member-info">
+            <h3>Ayush Banerjee</h3>
+            <p>PhD Student</p>
+            <a href="#" class="btn-secondary" data-cv="assets/cv/ayush-banerjee-cv.pdf">
+              Curriculum Vitae
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- CV MODAL -->
+  <div id="cvModal" class="cv-modal">
+    <div class="cv-modal-content">
+      <button class="cv-close" aria-label="Close CV">&times;</button>
+      <iframe id="cvFrame"></iframe>
+    </div>
   </div>
-</section>
 
-<!-- ================= CONTENT ================= -->
-<main class="page-content members-page">
-
-  <section class="members-grid">
-
-    <!-- MEMBER -->
-    <article class="member-card">
-      <img src="images/Raunak.jpeg" alt="Raunak Basu">
-      <h3>Raunak Basu, PhD</h3>
-      <p class="member-role">Principal Investigator</p>
-      <a href="#" class="btn-secondary" data-cv="assets/cv/RaunakBasu.pdf">
-        Curriculum Vitae
-      </a>
-    </article>
-
-    <article class="member-card">
-      <img src="images/Ivon.png" alt="Ivon Ben-Zaken">
-      <h3>Ivon Ben-Zaken</h3>
-      <p class="member-role">Lab Manager</p>
-      <a href="#" class="btn-secondary" data-cv="assets/cv/ivon-ben-zaken-cv.pdf">
-        Curriculum Vitae
-      </a>
-    </article>
-
-    <article class="member-card">
-      <img src="images/Abhishek.jpeg" alt="Abhishek Jangid">
-      <h3>Abhishek Jangid</h3>
-      <p class="member-role">PhD Student</p>
-      <a href="#" class="btn-secondary" data-cv="assets/cv/abhishek-jangid-cv.pdf">
-        Curriculum Vitae
-      </a>
-    </article>
-
-    <article class="member-card">
-      <img src="images/Miada.jpg" alt="Miada Abu-Salih">
-      <h3>Miada Abu-Salih</h3>
-      <p class="member-role">PhD Student</p>
-      <a href="#" class="btn-secondary" data-cv="assets/cv/miada-abu-salih-cv.pdf">
-        Curriculum Vitae
-      </a>
-    </article>
-
-    <article class="member-card">
-      <img src="images/Francis.jpeg" alt="Francis Mitri">
-      <h3>Francis Mitri</h3>
-      <p class="member-role">PhD Student</p>
-      <a href="#" class="btn-secondary" data-cv="assets/cv/francis-mitri-cv.pdf">
-        Curriculum Vitae
-      </a>
-    </article>
-
-    <article class="member-card">
-      <img src="images/Raunak.jpeg" alt="Ayush Banerjee">
-      <h3>Ayush Banerjee</h3>
-      <p class="member-role">PhD Student</p>
-      <a href="#" class="btn-secondary" data-cv="assets/cv/ayush-banerjee-cv.pdf">
-        Curriculum Vitae
-      </a>
-    </article>
-
-  </section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<div id="footer-placeholder"></div>
-
-<!-- ================= CV MODAL ================= -->
-<div id="cvModal" class="cv-modal">
-  <div class="cv-modal-content">
-    <button class="cv-close" aria-label="Close CV">&times;</button>
-    <iframe id="cvFrame"></iframe>
-  </div>
-</div>
-
-<script src="assets/js/cv-modal.js"></script>
+  <script src="assets/js/cv-modal.js"></script>
 
 </body>
 </html>
