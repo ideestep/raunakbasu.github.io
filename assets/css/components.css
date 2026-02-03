@@ -106,8 +106,9 @@
 }
 .news-list li {
   display: grid;
-  grid-template-columns: 90px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 20px;
+  align-items: start;
 
   padding: 14px 0;
   border-bottom: 1px dashed #ddd;
