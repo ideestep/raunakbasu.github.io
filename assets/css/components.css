@@ -181,3 +181,26 @@
 .site-nav a:hover {
   text-decoration: underline;
 }
+
+.contact-social {
+  margin-top: 12px;
+}
+
+.contact-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #1f2f24;
+  text-decoration: none;
+}
+
+.contact-social a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
