@@ -56,3 +56,8 @@ img {
 strong {
   font-weight: 600;
 }
+
+.site-header {
+  background-color: #f4f6f8; /* academic neutral */
+  border-bottom: 1px solid #ddd;
+}
