@@ -152,3 +152,37 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+
+.site-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding: 32px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-address {
+  font-style: normal; /* remove italic default */
+  line-height: 1.5;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-meta {
+  margin: 0;
+  line-height: 1.4;
+  color: #555;
+}
