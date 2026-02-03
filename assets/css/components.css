@@ -149,3 +149,28 @@
   color: #eee;
   margin-top: 12px;
 }
+
+/* LOGO */
+.site-logo a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+/* NAV */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
