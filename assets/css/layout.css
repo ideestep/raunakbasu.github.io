@@ -186,3 +186,14 @@ section {
   line-height: 1.4;
   color: #555;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    text-align: left;
+    margin-top: 16px;
+  }
+}
