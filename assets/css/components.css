@@ -1,8 +1,11 @@
+/* =========================
+   NAVIGATION
+   ========================= */
+
 .nav a {
-  margin-left: 20px;
+  margin-left: 24px;
   font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
   color: #1f2f24;
   position: relative;
 }
@@ -11,11 +14,11 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -5px;
   width: 0;
   height: 2px;
   background: #0f2a44;
-  transition: width 0.25s ease;
+  transition: width 0.2s ease;
 }
 
 .nav a:hover::after,
@@ -23,71 +26,39 @@
   width: 100%;
 }
 
-.home-intro {
-  max-width: 820px;
-  margin: 4rem auto 5rem;
-  padding: 0 20px;
-  text-align: center;
+/* =========================
+   BUTTONS (DECORATIVE)
+   ========================= */
+
+.hero-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
-.home-intro h1 {
-  font-size: 44px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #2f3a2f;
-}
-
-.home-intro .hero-intro {
-  font-size: 16.5px;
-  line-height: 1.75;
-  color: #333;
-  margin-bottom: 32px;
-}
-
-.hero-actions.decorative .btn {
+.btn {
   background: none;
   border: none;
-  color: #3f5a2e;
+  font-size: 14px;
   font-weight: 500;
-  padding: 6px 12px;
+  color: #3f5a2e;
+  cursor: pointer;
 }
 
-.hero-actions.decorative .btn::after {
+.btn::after {
   content: " →";
-  font-weight: 400;
 }
 
-.hero-actions.decorative .btn:hover {
+.btn:hover {
   text-decoration: underline;
 }
 
-.page-hero {
-  height: 320px;
-  background-size: cover;
-  background-position: center;
-}
-.page-hero.small {
-  height: 240px;
-}
-
-.news-container {
-  padding: 0 20px;
-}
-
-/* ================= JOIN US GRID ================= */
-
-.join-grid {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 24px;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
-}
+/* =========================
+   JOIN CARDS
+   ========================= */
 
 .join-card {
-  background: #ffffff;
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
 
@@ -95,16 +66,9 @@
   flex-direction: column;
 
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.join-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
 }
 
 .join-card img {
-  width: 100%;
   height: 200px;
   object-fit: cover;
 }
@@ -112,116 +76,17 @@
 .join-card h3 {
   font-size: 18px;
   margin: 20px 20px 10px;
-  color: #1f2d1f;
 }
 
 .join-card p {
   font-size: 14px;
-  line-height: 1.6;
   margin: 0 20px 24px;
-  color: #444;
   flex-grow: 1;
 }
 
-.join-card a {
-  margin: 0 20px 24px;
-  align-self: flex-start;
-}
-
-@media (max-width: 900px) {
-  .join-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .join-card img {
-    height: 220px;
-  }
-}
-
-.news-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-.news-year {
-  font-size: 22px;
-  margin: 50px 0 20px;
-  color: #1f2d1f;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 8px;
-}
-.news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.news-list li {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 20px;
-  align-items: start;
-
-  padding: 14px 0;
-  border-bottom: 1px dashed #ddd;
-}
-
-/* ================= RESEARCH PAGE ================= */
-
-.research-intro {
-  max-width: 800px;
-  margin: 3rem auto 4rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #222;
-}
-
-.research-intro p + p {
-  margin-top: 1rem;
-}
-
-.research-blocks {
-  max-width: 1100px;
-  margin: 0 auto 5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-.research-block h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-.research-block p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .research-blocks {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ================= MEMBERS PAGE ================= */
-
-.members-page {
-  margin-bottom: 5rem;
-}
-
-/* ================= MEMBERS GRID ================= */
-
-.members-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 3rem;
-  align-items: start;
-}
-
-/* ================= MEMBER CARD ================= */
+/* =========================
+   MEMBER CARDS
+   ========================= */
 
 .member-card {
   display: flex;
@@ -230,113 +95,34 @@
   text-align: center;
 }
 
-/* Fixed avatar box to normalize alignment */
 .member-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
-/* Text block alignment */
 .member-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 120px; /* KEY: forces equal height */
-}
-
-/* Name */
-.member-info h3 {
-  margin: 0.5rem 0 0.25rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-/* Role */
-.member-info p {
-  margin: 0 0 0.75rem;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* CV link spacing consistency */
-.member-info a {
-  margin-top: auto; /* KEY: pushes link to same baseline */
-  font-size: 0.9rem;
-}
-
-/* ================= PUBLICATIONS ================= */
-
-.publications-page {
-  max-width: 900px;
-  margin: 4rem auto 6rem;
-}
-
-.publication-block {
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-.pub-year {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.4rem;
-}
-
-.publication-list {
-  list-style: decimal;
-  padding-left: 1.2rem;
-}
-
-.publication-list li {
-  margin-bottom: 1.5rem;
-}
-
-.publication-list strong {
-  display: block;
-  margin: 0.2rem 0;
-}
-
-.publication-list em {
-  font-style: italic;
-}
-
-.author-note {
-  display: block;
-  font-size: 0.8rem;
-  color: #666;
-  margin-top: 0.2rem;
+  min-height: 120px;
 }
 
 /* =========================
-   LAB PHOTOS – GALLERY
+   GALLERY
    ========================= */
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  margin-top: 40px;
 }
 
 .gallery-grid img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  cursor: pointer;
   border-radius: 4px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 }
-
-.gallery-grid img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
 
 /* =========================
    LIGHTBOX
@@ -352,143 +138,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  padding: 40px;
 }
 
 .lightbox-img {
   max-width: 90%;
   max-height: 80vh;
-  margin-bottom: 16px;
-  border-radius: 4px;
 }
 
 .lightbox-caption {
-  color: #eaeaea;
-  font-size: 0.95rem;
-  max-width: 800px;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 32px;
-  color: #ffffff;
-  cursor: pointer;
-  line-height: 1;
-}
-
-
-/* =========================
-   RESPONSIVE REFINEMENTS
-   ========================= */
-
-@media (max-width: 768px) {
-  .gallery-grid {
-    gap: 16px;
-  }
-
-  .lightbox-caption {
-    font-size: 0.9rem;
-  }
-}
-
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.contact-map iframe {
-  width: 100%;
-  height: 350px;
-  border: 0;
-}
-
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.page-hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.82); /* academic, light wash */
-  z-index: 1;
-}
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 820px;
-  text-align: center;
-  padding: 40px 20px;
-}
-.hero-kicker {
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #6b7a5f;
-  margin-bottom: 12px;
-}
-
-.hero-inner h1 {
-  font-size: 56px;
-  font-weight: 600;
-  color: #3f4f2f;
-  margin-bottom: 20px;
-}
-
-.hero-intro {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #3e3e3e;
-  max-width: 720px;
-  margin: 0 auto 32px;
-}
-.hero-actions {
-  display: flex;
-  gap: 18px;
-  justify-content: center;
-}
-
-.btn {
-  font-size: 14px;
-  padding: 10px 22px;
-  border-radius: 2px;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-}
-
-.btn-primary {
-  background: #4f6b3a;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #3f5a2e;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #4f6b3a;
-  border: 1px solid #4f6b3a;
-}
-
-.btn-secondary:hover {
-  background: #f1f4ef;
+  color: #eee;
+  margin-top: 12px;
 }
