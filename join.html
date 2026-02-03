@@ -5,100 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join Us — Basu Neuro Lab</title>
 
-  <!-- CORE CSS (same as index.html) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Header / Footer includes -->
+  <script src="assets/js/includes.js" defer></script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html">
-      <img src="img/logo.png" alt="Basu Neuro Lab Logo" class="logo">
-    </a>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
 
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="members.html">Members</a>
-      <a href="publications.html">Publications</a>
-      <a href="labnews.html">Lab News</a>
-      <a href="join.html" class="active">Join Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main>
 
-<!-- ================= HERO ================= -->
-<section class="page-hero hero-join"></section>
+    <!-- HERO IMAGE ONLY -->
+    <section
+      class="page-hero hero-join"
+      style="background-image: url('assets/images/hero-join.jpg');">
+    </section>
 
-<!-- ================= MAIN ================= -->
-<main class="page-content">
+    <!-- JOIN SECTION -->
+    <section class="join-grid">
 
-  <section class="join-grid">
+      <!-- PhD -->
+      <article class="join-card">
+        <img src="assets/images/join-phd.jpg" alt="PhD students">
+        <h3>PhD Students</h3>
+        <p>
+          Prospective PhD students may apply through the ELSC program
+          or by contacting the lab with a CV and brief research statement.
+        </p>
+        <a href="#" class="btn">ELSC Program</a>
+      </article>
 
-    <!-- PhD -->
-    <article class="join-card">
-      <img src="images/join-phd.jpg" alt="PhD students">
-      <h3>PhD Students</h3>
-      <p>
-        PhD students can join us through the ELSC program
-        or by emailing Raunak with a CV and brief research statement.
-      </p>
-      <a href="#" class="btn-primary">ELSC Program</a>
-    </article>
+      <!-- Postdoc -->
+      <article class="join-card">
+        <img src="assets/images/join-postdoc.jpg" alt="Postdoctoral fellows">
+        <h3>Postdoctoral Fellows</h3>
+        <p>
+          Candidates with experience in systems neuroscience, behavior,
+          electrophysiology, or quantitative data analysis are encouraged to apply.
+        </p>
+        <a href="mailto:raunak.basu@mail.huji.ac.il" class="btn">
+          Email CV
+        </a>
+      </article>
 
-    <!-- Postdoc -->
-    <article class="join-card">
-      <img src="images/join-postdoc.jpg" alt="Postdoctoral fellows">
-      <h3>Postdoctoral Fellows</h3>
-      <p>
-        Candidates with experience in systems neuroscience, behavior,
-        electrophysiology, or data analysis are encouraged to apply.
-      </p>
-      <a href="mailto:raunak.basu@mail.huji.ac.il" class="btn-primary">
-        Email CV
-      </a>
-    </article>
+      <!-- Undergraduate -->
+      <article class="join-card">
+        <img src="assets/images/join-undergrad.jpg" alt="Undergraduate researchers">
+        <h3>Undergraduate Researchers</h3>
+        <p>
+          Undergraduate researchers are expected to commit for a minimum of six months.
+          Short-term internships are generally not offered.
+        </p>
+        <a href="contact.html" class="btn">
+          Contact
+        </a>
+      </article>
 
-    <!-- Undergraduate -->
-    <article class="join-card">
-      <img src="images/join-undergrad.jpg" alt="Undergraduate researchers">
-      <h3>Undergraduate Researchers</h3>
-      <p>
-        A minimum six-month commitment is required.
-        Short-term internships are generally not offered.
-      </p>
-      <a href="contact.html" class="btn-secondary">
-        Contact
-      </a>
-    </article>
+    </section>
 
-  </section>
+  </main>
 
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="footer-content">
-    <p>
-      Raunak Basu<br>
-      Assistant Professor<br>
-      The Edmond and Lily Safra Center for Brain Sciences<br>
-      The Suzanne and Charles Goodman Brain Sciences Building<br>
-      Edmond J. Safra Campus<br>
-      The Hebrew University of Jerusalem, 9190401<br>
-      Lab: 2209
-    </p>
-
-    <p class="copyright">
-      © 2026 Basu Neuro Lab. All rights reserved.
-    </p>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
 
 </body>
 </html>
