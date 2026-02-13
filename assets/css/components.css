@@ -244,3 +244,28 @@
   border: none;
   cursor: pointer;
 }
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Research Card */
+.research-block {
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+}
+
+.research-block h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
