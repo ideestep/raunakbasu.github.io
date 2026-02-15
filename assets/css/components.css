@@ -54,6 +54,34 @@
 }
 
 /* =========================
+   JOIN PAGE
+========================= */
+
+.join-sections {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.join-block {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.join-block:last-child {
+  border-bottom: none;
+}
+
+.join-block h3 {
+  margin-bottom: 15px;
+}
+
+.join-block p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+/* =========================
    JOIN CARDS
    ========================= */
 
