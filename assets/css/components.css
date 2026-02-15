@@ -245,18 +245,7 @@
   cursor: pointer;
 }
 
-/* NAVIGATION */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
 
 /* Research Card */
 .research-block {
