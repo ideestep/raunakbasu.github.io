@@ -85,33 +85,6 @@
    JOIN CARDS
    ========================= */
 
-.join-card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.join-card img {
-  height: 200px;
-  object-fit: cover;
-}
-
-.join-card h3 {
-  font-size: 18px;
-  margin: 20px 20px 10px;
-}
-
-.join-card p {
-  font-size: 14px;
-  margin: 0 20px 24px;
-  flex-grow: 1;
-}
-
 /* =========================
    MEMBER CARDS
    ========================= */
