@@ -220,7 +220,7 @@ section {
 
 /* Specific hero */
 .hero-research {
-  background-image: url("../images/research-hero.jpg");
+  background-image: url("/images/research-hero.jpg");
 }
 
 /* Research blocks layout */
