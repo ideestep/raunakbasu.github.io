@@ -62,25 +62,7 @@ section {
   border-bottom: 1px dashed #ddd;
 }
 
-/* =========================
-   JOIN PAGE
-   ========================= */
 
-.join-grid {
-  max-width: 1100px;
-  margin: 5rem auto;
-  padding: 0 24px;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
-}
-
-@media (max-width: 900px) {
-  .join-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* =========================
    MEMBERS PAGE
@@ -220,7 +202,7 @@ section {
 
 /* Specific hero */
 .hero-research {
-  background-image: url("../images/research-hero.jpg");
+  background-image: url("/images/research-hero.jpg");
 }
 
 /* Research blocks layout */
