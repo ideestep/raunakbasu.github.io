@@ -57,6 +57,11 @@
    JOIN PAGE
 ========================= */
 
+.hero-join {
+  background-image: url("../images/hero-join.jpg");
+}
+
+
 .join-sections {
   max-width: 900px;
   margin: 80px auto;
