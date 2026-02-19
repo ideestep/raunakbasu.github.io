@@ -156,19 +156,89 @@
 
 
 /* =========================
-   RESEARCH CARDS
+   RESEARCH CARDS GRID
 ========================= */
 
-.research-block {
-  padding: 30px;
-  border: 1px solid #e5e5e5;
-  background: #fafafa;
+.research-blocks {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px; /* more horizontal spacing */
 }
 
-.research-block h3 {
-  margin-bottom: 15px;
-  font-size: 20px;
+@media (max-width: 1000px) {
+  .research-blocks {
+    grid-template-columns: 1fr;
+  }
 }
+
+/* CARD */
+
+.research-card {
+  border: 1px solid #e5e5e5;
+  padding: 25px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px; /* keeps square-ish shape */
+}
+
+.research-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.research-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* PREVIEW TEXT */
+
+.preview {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* FULL TEXT (HIDDEN INITIALLY) */
+
+.full-text {
+  display: none;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.research-card.expanded .full-text {
+  display: block;
+}
+
+.research-card.expanded .preview {
+  display: none;
+}
+
+/* BUTTON */
+
+.see-more {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: 1px solid #0f2a44;
+  background: #0f2a44;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+.see-more:hover {
+  background: transparent;
+  color: #0f2a44;
+}
+
 
 
 /* =========================
