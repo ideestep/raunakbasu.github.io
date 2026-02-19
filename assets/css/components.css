@@ -284,3 +284,20 @@
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* =========================
+   HOME CTA BUTTONS
+========================= */
+
+.home-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-large {
+  font-size: 1.3rem;
+  padding: 18px 40px;
+  font-weight: 600;
+  margin: 10px;
+  display: inline-block;
+}
