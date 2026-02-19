@@ -266,3 +266,21 @@
 .hero-research {
   background-image: url("../images/hero-research.jpg");
 }
+
+
+/* =========================
+   HOME HIGHLIGHTS
+========================= */
+
+.home-highlights {
+  max-width: 800px;
+  margin: 40px auto;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.home-highlights li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
