@@ -276,7 +276,7 @@
   max-width: 800px;
   margin: 40px auto;
   padding-left: 20px;
-  text-align: left;
+  text-align: left !important;
 }
 
 .home-highlights li {
