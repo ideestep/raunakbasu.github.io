@@ -196,6 +196,20 @@
   // Start on load
   startAutoSlide();
 </script>
+<script>
+  const cards = document.querySelectorAll(".research-card");
+
+  cards.forEach(card => {
+    const button = card.querySelector(".see-more");
+
+    button.addEventListener("click", () => {
+      card.classList.toggle("expanded");
+      button.textContent = card.classList.contains("expanded")
+        ? "See Less"
+        : "See More";
+    });
+  });
+</script>
 
 
 </body>
