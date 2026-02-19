@@ -269,35 +269,83 @@
 
 
 /* =========================
-   HOME HIGHLIGHTS
+   HERO BACKGROUNDS
+========================= */
+
+.hero-home {
+  background-image: url("../images/hero-index.jpg");
+}
+
+.hero-research {
+  background-image: url("../images/hero-research.jpg");
+}
+
+.hero-join {
+  background-image: url("../images/hero-join.jpg");
+}
+
+/* =========================
+   PAGE HERO BASE
+========================= */
+
+.page-hero {
+  height: 60vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* =========================
+   HOME INTRO
+========================= */
+
+.home-intro {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.home-intro h1 {
+  margin-bottom: 20px;
+}
+
+.hero-intro {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   BULLET POINTS
 ========================= */
 
 .home-highlights {
-  max-width: 800px;
-  margin: 40px auto;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto 40px auto;
   padding-left: 20px;
-  text-align: left !important;
 }
 
 .home-highlights li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
 /* =========================
-   HOME CTA BUTTONS
+   CTA BUTTONS
 ========================= */
 
 .home-cta {
-  margin-top: 40px;
-  text-align: center;
+  margin-top: 20px;
 }
 
 .btn-large {
-  font-size: 1.3rem;
-  padding: 18px 40px;
+  font-size: 1.2rem;
+  padding: 16px 40px;
+  margin: 10px 15px;
   font-weight: 600;
-  margin: 10px;
-  display: inline-block;
 }
+
