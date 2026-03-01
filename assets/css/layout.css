@@ -263,5 +263,8 @@ section {
 }
 
 .research-grid {
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  align-items: start;
 }
