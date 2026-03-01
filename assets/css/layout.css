@@ -263,5 +263,5 @@ section {
 }
 
 .research-grid {
-  align-items: start;
+  align-items: flex-start;
 }
