@@ -175,6 +175,9 @@
 }
 
 /* CARD */
+/* =========================
+   RESEARCH CARD CLEAN FIX
+========================= */
 
 .research-card {
   border: 1px solid #e5e5e5;
@@ -182,9 +185,64 @@
   background: #fafafa;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 420px; /* keeps square-ish shape */
 }
+
+.research-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.research-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Preview text */
+
+.preview {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Hidden extended text */
+
+.full-text {
+  display: none;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Only expanded card shows full text */
+
+.research-card.expanded .full-text {
+  display: block;
+}
+
+.research-card.expanded .preview {
+  display: none;
+}
+
+/* Button stays at bottom cleanly */
+
+.see-more {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: 1px solid #0f2a44;
+  background: #0f2a44;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+.see-more:hover {
+  background: transparent;
+  color: #0f2a44;
+}
+
 
 .research-card h3 {
   margin-bottom: 15px;
@@ -198,28 +256,14 @@
   margin-bottom: 15px;
 }
 
-/* PREVIEW TEXT */
 
-.preview {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
 
-/* FULL TEXT (HIDDEN INITIALLY) */
 
-.full-text {
-  display: none;
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-}
 
-.research-card.expanded .full-text {
-  display: block;
-}
 
-.research-card.expanded .preview {
-  display: none;
-}
+
+
+
 
 /* BUTTON */
 
