@@ -61,9 +61,7 @@
 }
 
 
-/* ======================================================
-   HERO SECTIONS (CLEANED)
-====================================================== */
+
 
 /* ======================================================
    HERO – NO CROPPING VERSION
@@ -83,7 +81,7 @@
 }
 
 .hero-join {
-  background-image: url("../images/hero-join.jpg");
+  background-image: url("/images/hero-join.jpg");
 }
 
 
