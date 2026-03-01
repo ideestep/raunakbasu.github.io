@@ -43,11 +43,7 @@
 
   <div class="slider-dots">
     <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
+    
   </div>
 </div>
 
@@ -121,45 +117,47 @@
 <div id="footer-placeholder"></div>
 
   <script>
-  const slides = document.querySelector(".slides");
+    document.addEventListener("DOMContentLoaded", function () {
+  const slidesContainer = document.querySelector(".slides");
+  const slides = document.querySelectorAll(".slide");
+  const dotsContainer = document.querySelector(".slider-dots");
+
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  // Clear old dots (important)
+  dotsContainer.innerHTML = "";
+
+  // Create dots dynamically
+  slides.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    if (index === 0) dot.classList.add("active");
+
+    dot.addEventListener("click", () => {
+      goToSlide(index);
+    });
+
+    dotsContainer.appendChild(dot);
+  });
+
   const dots = document.querySelectorAll(".dot");
-  const slider = document.querySelector(".slider");
-  const totalSlides = dots.length;
 
-  let index = 0;
-  let interval;
-
-  function showSlide(i) {
-    index = i;
-    slides.style.transform = `translateX(-${index * 100}%)`;
+  function goToSlide(index) {
+    currentIndex = index;
+    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
 
     dots.forEach(dot => dot.classList.remove("active"));
     dots[index].classList.add("active");
   }
 
-  dots.forEach(dot => {
-    dot.addEventListener("click", () => {
-      showSlide(parseInt(dot.dataset.slide));
-    });
-  });
-
-  function startAutoSlide() {
-    interval = setInterval(() => {
-      index = (index + 1) % totalSlides;
-      showSlide(index);
-    }, 4000);
-  }
-
-  function stopAutoSlide() {
-    clearInterval(interval);
-  }
-
-  slider.addEventListener("mouseenter", stopAutoSlide);
-  slider.addEventListener("mouseleave", startAutoSlide);
-
-  // Start on load
-  startAutoSlide();
-</script>
+  // Optional: Auto slide every 5 sec
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    goToSlide(currentIndex);
+  }, 5000);
+});
+  </script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
