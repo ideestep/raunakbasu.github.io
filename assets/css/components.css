@@ -73,7 +73,7 @@
   background-size: contain;   /* key change */
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #f4f4f4;  /* fallback space color */
+  background-color: #fff;  /* fallback space color */
 }
 
 .hero-home {
