@@ -178,18 +178,35 @@
   startAutoSlide();
 </script>
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+
   const cards = document.querySelectorAll(".research-card");
 
   cards.forEach(card => {
     const button = card.querySelector(".see-more");
 
-    button.addEventListener("click", () => {
-      card.classList.toggle("expanded");
-      button.textContent = card.classList.contains("expanded")
-        ? "See Less"
-        : "See More";
+    button.addEventListener("click", function () {
+
+      const isExpanded = card.classList.contains("expanded");
+
+      // Close all cards first
+      cards.forEach(c => {
+        c.classList.remove("expanded");
+        const btn = c.querySelector(".see-more");
+        btn.textContent = "See More";
+      });
+
+      // If it was NOT expanded before, expand it
+      if (!isExpanded) {
+        card.classList.add("expanded");
+        button.textContent = "See Less";
+      }
+
     });
+
   });
+
+});
 </script>
 
 
