@@ -65,13 +65,17 @@
    HERO SECTIONS (CLEANED)
 ====================================================== */
 
+/* ======================================================
+   HERO – NO CROPPING VERSION
+====================================================== */
+
 .page-hero {
   width: 100%;
-  height: 60vh;
-  min-height: 420px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  height: 420px; /* adjust if needed */
+  background-size: contain;   /* key change */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f4f4f4;  /* fallback space color */
 }
 
 .hero-home {
