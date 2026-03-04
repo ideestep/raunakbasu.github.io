@@ -406,3 +406,34 @@
   border: none;
   cursor: pointer;
 }
+
+/* ======================================================
+   HOME / WELCOME PAGE ADJUSTMENTS
+====================================================== */
+
+/* Add more breathing space above CTA buttons */
+
+.home-cta {
+  margin-top: 40px;   /* increase gap from text */
+}
+
+
+/* Improve bullet list alignment */
+
+.home-highlights {
+  max-width: 600px;
+  margin: 30px auto 40px auto;
+  padding-left: 0;        /* remove awkward offset */
+  text-align: left;       /* left-align text */
+  list-style-position: outside;
+}
+
+.home-highlights ul {
+  padding-left: 20px;     /* clean bullet spacing */
+  margin: 0;
+}
+
+.home-highlights li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
