@@ -198,8 +198,8 @@
 .slider {
   position: relative;
   overflow: hidden;
-  height: 65vh;
-  min-height: 420px;
+  height: 45vh;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
