@@ -437,3 +437,15 @@
   margin-bottom: 12px;
   line-height: 1.6;
 }
+
+/* ======================================================
+   RESEARCH PAGE – IMAGE SIZE REDUCTION
+====================================================== */
+
+.research-card img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 15px auto 20px auto; /* center image */
+  object-fit: contain;
+}
