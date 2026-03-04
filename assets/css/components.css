@@ -449,3 +449,42 @@
   margin: 15px auto 20px auto; /* center image */
   object-fit: contain;
 }
+
+/* ======================================================
+   HOME PAGE CLEAN FIX
+====================================================== */
+
+/* Improve intro spacing */
+.home-intro {
+  max-width: 800px;
+  margin: 5rem auto 6rem;
+  text-align: center;
+}
+
+/* Better paragraph spacing */
+.hero-intro {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+/* Fix bullet alignment */
+.home-highlights {
+  max-width: 520px;
+  margin: 0 auto 40px auto;
+  text-align: left;          /* critical */
+  padding-left: 20px;        /* clean bullet indent */
+}
+
+.home-highlights li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Add proper spacing before buttons */
+.home-cta {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;                 /* space between buttons */
+}
